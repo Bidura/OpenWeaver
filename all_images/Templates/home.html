@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Generate images through voice !</h1>
+<h2>Upload audio file mentioning the image you want to see</h2>
+<br/>
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %} 
+    <input type="file" id="mywav" name="mywav">
+    <input type="Submit" value="Generate and save the image"></input>
+</form>
+<img src={{img}}></img>
+<br/>
+<h2>{{msg}}</h2>
+<br/>
+<h2>{{msg2}}</h2>
+
+</body>
+</html>
